@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>E-commerce - Carrinho</title>
+    <script defer src="https://use.fontawesome.com/releases/v5.15.3/js/all.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><img src="images/logo.png" alt="logo" style="width: 110px; margin-left: 80px;"></a>
+        <nav>
+            <ul class="nav-bar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="cadastro.html">Cadastro</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="carrinho.html">Carrinho</a></li>
+            </ul>
+        </nav>
+        <div class="search-box">
+            <input class="search-txt" type="search" name="" placeholder="Faça sua pesquisa">
+            <a class="search-btn" href="#">
+                <i class="fas fa-search"></i>
+            </a>
+        </div>
+    </header>
+
+    <div class="div2 cart">
+        <table>
+            <tr>
+                <th>Produto</th>
+                <th>Quantidade</th>
+                <th>Subtotal</th>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <a href="produto1.html"><img src="images/p1img1.jpg"></a>
+                        <div>
+                            <p>Xiaomi Redmi Note 10</p>
+                            <small>Preço: R$1.499,99</small><br>
+                            <a href="">Remover</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>R$1.499,99</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <a href="produto2.html"><img src="images/p2img1.jpg"></a>
+                        <div>
+                            <p>Apple Ipad 8ª geração</p>
+                            <small>Preço: R$2.599,99</small><br>
+                            <a href="">Remover</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>R$2.599,99</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <a href="produto3.html"><img src="images/p3img1.jpg"></a>
+                        <div>
+                            <p>Playstation 5</p>
+                            <small>R$4.999,99</small><br>
+                            <a href="">Remover</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>R$4.999,99</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <a href="produto4.html"><img src="images/p4img1.jpg"></a>
+                        <div>
+                            <p>Xiaomi Redmi AirDots</p>
+                            <small>R$119,99</small><br>
+                            <a href="">Remover</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>R$119,99</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <a href="produto5.html"><img src="images/p5img1.jpg"></a>
+                        <div>
+                            <p>Apple AirPods</p>
+                            <small>R$1.149,99</small><br>
+                            <a href="">Remover</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>R$1.149,99</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <a href="produto6.html"><img src="images/p6img1.jpg"></a>
+                        <div>
+                            <p>Xbox Series X</p>
+                            <small>R$4.999,99</small><br>
+                            <a href="">Remover</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>R$4.999,99</td>
+            </tr>
+        </table>
+
+        <div class="total">
+            <table>
+                <tr>
+                    <td>Subtotal</td>
+                    <td>R$15.369,94</td>
+                </tr>
+                <tr>
+                    <td>Frete</td>
+                    <td>R$35,00</td>
+                </tr>
+                <tr>
+                    <td>Total</td>
+                    <td>R$15.404,94</td>
+                </tr>
+            </table>
+        </div>
+        <button class="cart-btn">Finalizar Compra</button>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>E-commerce - Home</title>
+    <script defer src="https://use.fontawesome.com/releases/v5.15.3/js/all.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <a href="index.html"><img src="images/logo.png" alt="logo" style="width: 110px; margin-left: 80px;"></a>
+        <nav>
+            <ul class="nav-bar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="cadastro.html">Cadastro</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="carrinho.html">Carrinho</a></li>
+            </ul>
+        </nav>
+        <div class="search-box">
+            <input class="search-txt" type="search" name="" placeholder="Faça sua pesquisa" id="pesquisa"
+                onchange="pesquisa()">
+            <a class="search-btn" href="#">
+                <i class="fas fa-search"></i>
+            </a>
+        </div>
+    </header>
+
+    <div class="div1">
+        <h1 class="title">Produtos Eletrônicos</h1>
+        <div class="row">
+            <div class="col" id="p1">
+                <a href="produto1.html"><img src="images/p1img1.jpg"></a>
+                <a href="produto1.html">
+                    <h4>Xiaomi Redmi Note 10</h4>
+                </a>
+                <a href="produto1.html">
+                    <p>R$1.599,99</p>
+                </a>
+            </div>
+
+            <div class="col" id="p2">
+                <a href="produto2.html"><img src="images/p2img1.jpg"></a>
+                <a href="produto2.html">
+                    <h4>Apple Ipad 8ª geração</h4>
+                </a>
+                <a href="produto2.html">
+                    <p>R$2.599,99</p>
+                </a>
+            </div>
+
+            <div class="col" id="p3">
+                <a href="produto3.html"><img src="images/p3img1.jpg"></a>
+                <a href="produto3.html">
+                    <h4>Playstation 5</h4>
+                </a>
+                <a href="produto3.html">
+                    <p>R$4.999,99</p>
+                </a>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col" id="p4">
+                <a href="produto4.html"><img src="images/p4img1.jpg"></a>
+                <a href="produto4.html">
+                    <h4>Xiaomi Redmi AirDots</h4>
+                </a>
+                <a href="produto4.html">
+                    <p>R$119,99</p>
+                </a>
+            </div>
+
+            <div class="col" id="p5">
+                <a href="produto5.html"><img src="images/p5img1.jpg"></a>
+                <a href="produto5.html">
+                    <h4>Apple AirPods</h4>
+                    <a href="produto5.html">
+                        <p>R$1.149,99</p>
+                    </a>
+            </div>
+
+            <div class="col" id="p6">
+                <a href="produto6.html"><img src="images/p6img1.jpg"></a>
+                <a href="produto6.html">
+                    <h4>Xbox Series X</h4>
+                </a>
+                <a href="produto6.html">
+                    <p>R$4.999,99</p>
+                </a>
+            </div>
+        </div>
+
+        <script>
+            function pesquisa() {
+                var x = document.getElementById("pesquisa").value;
+                var p1 = document.getElementById("p1");
+                var p2 = document.getElementById("p2");
+                var p3 = document.getElementById("p3");
+                var p4 = document.getElementById("p4");
+                var p5 = document.getElementById("p5");
+                var p6 = document.getElementById("p6");
+
+                if (x == "xiaomi" || x == "xiaomi redmi") {
+                    p1.style.display = "block";
+                    p2.style.display = "none";
+                    p3.style.display = "none";
+                    p4.style.display = "block";
+                    p5.style.display = "none";
+                    p6.style.display = "none";
+                }
+
+                if (x == "xiaomi redmi note 10" || x == "xiaomi redmi note" || x == "xiaomi note 10" || x == "xiaomi note" || x == "redmi note 10" || x == "redmi note") {
+                    p1.style.display = "block";
+                    p2.style.display = "none";
+                    p3.style.display = "none";
+                    p4.style.display = "none";
+                    p5.style.display = "none";
+                    p6.style.display = "none";
+                }
+
+                if (x == "xiaomi redmi airdots" || x == "xiaomi airdots" || x == "airdots") {
+                    p1.style.display = "none";
+                    p2.style.display = "none";
+                    p3.style.display = "none";
+                    p4.style.display = "block";
+                    p5.style.display = "none";
+                    p6.style.display = "none";
+                }
+
+                if (x == "apple") {
+                    p1.style.display = "none";
+                    p2.style.display = "block";
+                    p3.style.display = "none";
+                    p4.style.display = "none";
+                    p5.style.display = "block";
+                    p6.style.display = "none";
+                }
+
+                if (x == "apple ipad 8ª geração" || x == "apple ipad 8" || x == "apple ipad" || x == "ipad 8ª geração" || x == "ipad 8" || x == "ipad apple" || x == "ipad") {
+                    p1.style.display = "none";
+                    p2.style.display = "block";
+                    p3.style.display = "none";
+                    p4.style.display = "none";
+                    p5.style.display = "none";
+                    p6.style.display = "none";
+                }
+
+                if (x == "apple airpods" || x == "airpods apple" || x == "airpods") {
+                    p1.style.display = "none";
+                    p2.style.display = "none";
+                    p3.style.display = "none";
+                    p4.style.display = "none";
+                    p5.style.display = "block";
+                    p6.style.display = "none";
+                }
+
+                if (x == "videogame" || x == "video game" || x == "console") {
+                    p1.style.display = "none";
+                    p2.style.display = "none";
+                    p3.style.display = "block";
+                    p4.style.display = "none";
+                    p5.style.display = "none";
+                    p6.style.display = "block";
+                }
+
+                if (x == "playstation 5" || x == "playstation" || x == "ps5") {
+                    p1.style.display = "none";
+                    p2.style.display = "none";
+                    p3.style.display = "block";
+                    p4.style.display = "none";
+                    p5.style.display = "none";
+                    p6.style.display = "none";
+                }
+
+                if (x == "xbox series x" || x == "xbox series" || x == "xbox") {
+                    p1.style.display = "none";
+                    p2.style.display = "none";
+                    p3.style.display = "none";
+                    p4.style.display = "none";
+                    p5.style.display = "none";
+                    p6.style.display = "block";
+                }
+            }
+        </script>
+
+
+
+</body>
+
+</html>

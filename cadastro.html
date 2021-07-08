@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>E-commerce - Cadastro</title>
+    <script defer src="https://use.fontawesome.com/releases/v5.15.3/js/all.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><img src="images/logo.png" alt="logo" style="width: 110px; margin-left: 80px;"></a>
+        <nav>
+            <ul class="nav-bar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="cadastro.html">Cadastro</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="carrinho.html">Carrinho</a></li>
+            </ul>
+        </nav>
+        <div class="search-box">
+            <input class="search-txt" type="text" name="" placeholder="Faça sua pesquisa">
+            <a class="search-btn" href="#">
+                <i class="fas fa-search"></i>
+            </a>
+        </div>
+    </header>
+    
+    <h1 class="title">Entre em sua conta</h1>
+    <div class="form-container">
+        <div class="form-btn">
+            <span id="span-log" onclick="login()">Login</span>
+            <span id="span-reg" onclick="register()">Registrar-se</span>
+        </div>
+        <form id="login-form">
+            <input type="text" placeholder="Usuário" required>
+            <input type="password" placeholder="Senha" required>
+            <button type="submit" class="btn">Login</button>
+        </form>
+        <form id="reg-form">
+            <input type="text" placeholder="Usuário" required>
+            <input type="email" placeholder="Email" required>
+            <input type="password" placeholder="Senha" required>
+            <button type="submit" class="btn">Registrar-se</button>
+        </form>
+    </div>
+
+    <script>
+        var LogForm = document.getElementById("login-form");
+        var RegForm = document.getElementById("reg-form");
+        var LogSpan = document.getElementById("span-log");
+        var RegSpan = document.getElementById("span-reg");
+
+        function login() {
+            LogForm.style.display = "block";
+            RegForm.style.display = "none";
+            LogSpan.style.color = "purple"
+            RegSpan.style.color = "white"
+        }
+
+        function register() {
+            RegForm.style.display = "block";
+            LogForm.style.display = "none";
+            RegSpan.style.color = "purple"
+            LogSpan.style.color = "white"
+        }
+
+    </script>
+
+</body>
+
+</html>
